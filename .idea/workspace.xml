@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff43433a-4725-43c4-ac4b-07fb36dfc71a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/List/AList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List/BaseLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List/LList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List/ListInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List/Name.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List/Nice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List/NiceInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List/SantaClaus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List/SortedAList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List/SortedAListComp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List/SortedLList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List/SortedListInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List/people.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Queue/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Queue/LinkQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Queue/Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Queue/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/List/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/List/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Queue/EmptyQueueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/EmptyQueueException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Queue/LinkQueueArray.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Queue/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Queue/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Queue/QueueArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Queue/QueueArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +121,7 @@
       <workItem from="1698840222172" duration="11379000" />
       <workItem from="1698871623987" duration="2701000" />
       <workItem from="1699014123497" duration="992000" />
+      <workItem from="1699072557720" duration="308000" />
     </task>
     <task id="LOCAL-00001" summary="push all">
       <created>1697045652131</created>
@@ -153,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697045652131</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="push all">
+      <created>1699072766710</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699072766710</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
