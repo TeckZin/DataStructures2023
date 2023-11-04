@@ -1,5 +1,7 @@
 package Queue;
 
+import utils.EmptyQueueException;
+
 public class QueueArray <T> implements QueueInterface <T> {
 
     private T[] queueArr;
@@ -28,17 +30,15 @@ public class QueueArray <T> implements QueueInterface <T> {
         backIndex = (backIndex + 1) % capacity;
         queueArr[backIndex]= anEntry;
 
-        if (isFull()){
-            ensureCapacity();
-        }
+        if (isFull()) ensureCapacity();
+
 
 
     }
 
     @Override
     public T dequeue() {
-        if (isEmpty ())
-            throw new EmptyQueueException ("Empty queue: cannot dequeue");
+        if (isEmpty ()) throw new EmptyQueueException("Empty queue: cannot dequeue");
         T front = getFront();
         queueArr[frontIndex] = null;
         frontIndex = (frontIndex +1) % capacity;
@@ -55,9 +55,8 @@ public class QueueArray <T> implements QueueInterface <T> {
 
     @Override
     public T getFront() {
-        if(isEmpty()){
-            throw new EmptyQueueException();
-        }
+        if(isEmpty()) throw new EmptyQueueException();
+
         return queueArr [ frontIndex] ;
     }
 

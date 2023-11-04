@@ -1,10 +1,10 @@
 package utils;
 
-public class Node <T> {
+public class Node <T>  {
     private T data;
-    private Node next;
+    private Node<T> next;
 
-    public Node(T data, Node nextNode){
+    public Node(T data, Node<T> nextNode){
         this.data = data;
         next = nextNode;
 

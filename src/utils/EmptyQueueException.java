@@ -1,4 +1,4 @@
-package Queue;
+package utils;
 
 public class EmptyQueueException extends RuntimeException {
 
