@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff43433a-4725-43c4-ac4b-07fb36dfc71a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Queue/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Queue/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dictionary/BusinessName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dictionary/TDProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dictionary/TreeDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dictionary/restaurants.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dictionary/testFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/Iterable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/Iterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/List/newPeople.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/BinaryNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/BinaryNodeInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/BinaryTreeInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/SearchTreeInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/TreeInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/TreeIteratorInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary/DIctionaryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary/DictionaryInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary/SortedArrayDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary/SortedArrayDictionary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -40,14 +60,17 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Teck/IntelliJ Files/SchoolProjects/StackADT2023&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Teck/IntellijFx/Testing&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -57,11 +80,29 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Dictionary" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Teck\IntelliJ Files\DataStructures2023\DataStructures2023\src" />
+      <recent name="C:\Users\Teck\IntelliJ Files\DataStructures2023\DataStructures2023\src\Dictionary" />
       <recent name="C:\Users\Teck\IntelliJ Files\DataStructures2023\DataStructures2023\src\List" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.List.Main">
+  <component name="RunManager">
+    <configuration name="Dictionary.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Dictionary.Main" />
+      <module name="DataStructures2023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="List.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="List.Main" />
       <module name="DataStructures2023" />
@@ -90,6 +131,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Dictionary.Main" />
         <item itemvalue="Application.List.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -121,7 +163,23 @@
       <workItem from="1698840222172" duration="11379000" />
       <workItem from="1698871623987" duration="2701000" />
       <workItem from="1699014123497" duration="992000" />
-      <workItem from="1699072557720" duration="308000" />
+      <workItem from="1699072557720" duration="438000" />
+      <workItem from="1699122611413" duration="76000" />
+      <workItem from="1699122700671" duration="2000" />
+      <workItem from="1699415866331" duration="1781000" />
+      <workItem from="1699453605559" duration="4000" />
+      <workItem from="1699457815166" duration="1213000" />
+      <workItem from="1700169014516" duration="12000" />
+      <workItem from="1700169209932" duration="43000" />
+      <workItem from="1700373105740" duration="200000" />
+      <workItem from="1701142790146" duration="2155000" />
+      <workItem from="1701295270175" duration="1245000" />
+      <workItem from="1701380856300" duration="726000" />
+      <workItem from="1701386623223" duration="11144000" />
+      <workItem from="1701624237127" duration="4785000" />
+      <workItem from="1701912189004" duration="2710000" />
+      <workItem from="1702087510601" duration="5753000" />
+      <workItem from="1702165643798" duration="7623000" />
     </task>
     <task id="LOCAL-00001" summary="push all">
       <created>1697045652131</created>
@@ -137,7 +195,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699072766710</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="push all">
+      <created>1699072877127</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699072877127</updated>
+    </task>
+    <task id="LOCAL-00004" summary="push all">
+      <created>1701387635893</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701387635893</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
