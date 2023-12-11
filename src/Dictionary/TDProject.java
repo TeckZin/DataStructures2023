@@ -1,7 +1,11 @@
 package Dictionary;
 
+import utils.Entry;
+
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.rmi.UnexpectedException;
+import java.rmi.server.ExportException;
 import java.util.Iterator;
 import java.util.Objects;
 import java.util.Scanner;
@@ -10,11 +14,17 @@ public class TDProject {
 	
 	private SortedArrayDictionary <BusinessName, String> phoneBook;
 
+	private SortedArrayReverseDictionary <BusinessName, String> reversePhoneBook;
+
+	private TreeDictionary<BusinessName, String> treeDictionaryPhoneBook;
+
 
 
 
 	public TDProject() {
 		phoneBook = new SortedArrayDictionary <>();
+		reversePhoneBook = new SortedArrayReverseDictionary<>();
+		treeDictionaryPhoneBook = new TreeDictionary<>();
 	}
 
 	public boolean readFile(String fileName){
@@ -38,6 +48,8 @@ public class TDProject {
 
 //				System.out.println(phoneNumber);
         		phoneBook.add(fullName, phoneNumber);
+				reversePhoneBook.add(fullName, phoneNumber);
+				treeDictionaryPhoneBook.add(fullName, phoneNumber);
 
 //				System.out.println(fullName);
 
@@ -55,17 +67,109 @@ public class TDProject {
         
 	}
 
+	public boolean addPhoneTreeNumber(String fullName, String phone){
+		try{
+			treeDictionaryPhoneBook.add(new BusinessName(fullName), phone);
+			return true;
+		} catch (Exception e){
+			e.printStackTrace();
+			return false;
+		}
+	}
 
 
-	public String addPhoneNumber( String fullName, String phone) {
-		return phoneBook.add(new BusinessName(fullName), phone);
+	public boolean addPhoneNormalNumber( String fullName, String phone) {
+		try{
+			phoneBook.add(new BusinessName(fullName), phone);
+			return true;
+		}  catch (Exception e){
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	public boolean removePhoneTreeNumber(String fullName){
+		try{
+			treeDictionaryPhoneBook.remove(new BusinessName(fullName));
+			return true;
+		} catch (Exception e){
+			e.printStackTrace();
+			return false;
+		}
 	}
 	
-	public String removePhoneNumber (String fullName) {
-		return phoneBook.remove(new BusinessName(fullName));
+	public boolean removePhoneNormalNumber (String fullName) {
+
+		try{
+			phoneBook.remove(new BusinessName(fullName));
+			return true;
+		}  catch (Exception e){
+			e.printStackTrace();
+			return false;
+		}
+
 	}
+
+	public boolean addPhoneReverseNumber( String fullName, String phone) {
+		try{
+			reversePhoneBook.add(new BusinessName(fullName), phone);
+			return true;
+		}  catch (Exception e){
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	public boolean removePhoneReverseNumber (String fullName) {
+
+		try{
+			reversePhoneBook.remove(new BusinessName(fullName));
+			return true;
+		}  catch (Exception e){
+			e.printStackTrace();
+			return false;
+		}
+
+	}
+
+	public boolean addPhoneNumber(String fullName, String phone){
+		return addPhoneNormalNumber(fullName, phone) && addPhoneReverseNumber(fullName, phone) && addPhoneTreeNumber(fullName, phone);
+	}
+
+	public boolean removePhoneNumber(String fullName){
+
+		return removePhoneNormalNumber(fullName) && removePhoneReverseNumber(fullName) && removePhoneTreeNumber(fullName);
+
+	}
+
+	public void printTree(){
+		System.out.println("Tree");
+
+		Iterator<BusinessName> nameIterator = treeDictionaryPhoneBook.getKeyIterator();
+
+		Iterator <String> phoneIterator = treeDictionaryPhoneBook.getValueIterator();
+
+		while (nameIterator.hasNext()) {
+
+			BusinessName businessName = nameIterator.next();
+			System.out.println(businessName.getName() + ": " +
+					phoneIterator.next() + ": Location: " + businessName.getMunicipality());
+		}
+	}
+
+	public void printInorder(){
+		Iterator< Entry<BusinessName, String>> iterator = treeDictionaryPhoneBook.getIterator();
+		while(iterator.hasNext()){
+			Entry<BusinessName, String> entry = iterator.next();
+			BusinessName businessName = entry.getKey();
+
+			System.out.println(businessName.getName() + ": " +
+					entry.getValue() + ": Location: " + businessName.getMunicipality());
+		}
+	}
+
 	
-	public void print() {
+	public void printNormal() {
 		System.out.println("Printing");
 //		System.out.println(phoneBook.getSize());
 		Iterator <BusinessName> nameIterator = phoneBook.getKeyIterator();
@@ -78,6 +182,20 @@ public class TDProject {
 		}
 		
 		
+	}
+
+	public void printReverse(){
+
+		System.out.println("Printing");
+//		System.out.println(phoneBook.getSize());
+		Iterator <BusinessName> nameIterator = reversePhoneBook.getKeyIterator();
+		Iterator <String> phoneIterator = reversePhoneBook.getValueIterator();
+
+		while (nameIterator.hasNext()) {
+			BusinessName businessName = nameIterator.next();
+			System.out.println(businessName.getName() + ": " +
+					phoneIterator.next() + ": Location: " + businessName.getMunicipality());
+		}
 	}
 
 	public String getFullNameAndPhone(String s){

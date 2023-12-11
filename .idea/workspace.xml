@@ -5,27 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff43433a-4725-43c4-ac4b-07fb36dfc71a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Dictionary/BusinessName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dictionary/TDProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dictionary/TreeDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dictionary/restaurants.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dictionary/testFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/Iterable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/Iterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/List/newPeople.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/BinaryNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/BinaryNodeInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/BinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/BinaryTreeInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/SearchTreeInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/TreeInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/TreeIteratorInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Entry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dictionary/SortedArrayReverseDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/LinkedStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/Lisp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/StackInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dictionary/DIctionaryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary/DictionaryInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dictionary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dictionary/SortedArrayDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary/SortedArrayDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary/TDProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary/TDProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary/TreeDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary/TreeDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/BinaryNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BinaryNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Entry.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -89,7 +83,7 @@
       <recent name="C:\Users\Teck\IntelliJ Files\DataStructures2023\DataStructures2023\src\List" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Dictionary.Main">
     <configuration name="Dictionary.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Dictionary.Main" />
       <module name="DataStructures2023" />
@@ -179,7 +173,9 @@
       <workItem from="1701624237127" duration="4785000" />
       <workItem from="1701912189004" duration="2710000" />
       <workItem from="1702087510601" duration="5753000" />
-      <workItem from="1702165643798" duration="7623000" />
+      <workItem from="1702165643798" duration="8000000" />
+      <workItem from="1702178074534" duration="1191000" />
+      <workItem from="1702239288154" duration="13297000" />
     </task>
     <task id="LOCAL-00001" summary="push all">
       <created>1697045652131</created>
@@ -209,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701387635893</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="push all">
+      <created>1702177897194</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702177897194</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

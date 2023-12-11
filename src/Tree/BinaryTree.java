@@ -33,7 +33,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T> {
         if (rightTree != null) root.setRightChild (rightTree.getRootNode());
     }
 
-    private BinaryNode<T> getRootNode(){
+    public BinaryNode<T> getRootNode(){
         return root;
     }
 

@@ -9,7 +9,7 @@ import java.util.NoSuchElementException;
 
 import utils.Entry;
 
-public class SortedArrayDictionary <K extends Comparable<? super K>, V> implements DictionaryInterface <K, V> {
+public class SortedArrayReverseDictionary <K extends Comparable<? super K>, V> implements DictionaryInterface <K, V> {
 
     private Entry<K, V>[] entries;
     private  K key;
@@ -20,18 +20,15 @@ public class SortedArrayDictionary <K extends Comparable<? super K>, V> implemen
     private int numberOfEntries;
 
 
-    public SortedArrayDictionary(int capacity){
+    public SortedArrayReverseDictionary(int capacity){
         numberOfEntries = 0;
         entries = (Entry<K, V>[]) new Entry[capacity];
 
     }
 
-    public SortedArrayDictionary(){
+    public SortedArrayReverseDictionary(){
         this(DEFAULT_CAPACITY);
     }
-
-
-
 
 
     @Override
@@ -50,11 +47,12 @@ public class SortedArrayDictionary <K extends Comparable<? super K>, V> implemen
 //            System.out.println(key.getClass());
 //            System.out.println(value);
 
+
             Entry<K, V> newEntry = new Entry(key, value); // adding
 
 
+
             entries[keyIndex] = newEntry;
- // adding
 //            System.out.println(entries[keyIndex].getKey().getClass());
             ensureCapacity();
             numberOfEntries++;
@@ -148,7 +146,7 @@ public class SortedArrayDictionary <K extends Comparable<? super K>, V> implemen
 //        return null;
 //    }
 
-   private class KeyIterator implements Iterator <K> {
+    private class KeyIterator implements Iterator <K> {
         int cursor;
 
         public KeyIterator() {
@@ -175,7 +173,7 @@ public class SortedArrayDictionary <K extends Comparable<? super K>, V> implemen
     }
 
 
-   private class ValueIterator implements Iterator <V> {
+    private class ValueIterator implements Iterator <V> {
         int cursor;
 
         public ValueIterator() {
@@ -209,7 +207,7 @@ public class SortedArrayDictionary <K extends Comparable<? super K>, V> implemen
     }
     private int locateIndex(K key){
         int index = 0;
-        while ((index < numberOfEntries) && key.compareTo(entries[index].getKey()) > 0)
+        while ((index < numberOfEntries) && key.compareTo(entries[index].getKey()) < 0)
             index ++;
         return index;
 

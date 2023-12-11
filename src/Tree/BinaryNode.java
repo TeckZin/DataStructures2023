@@ -1,7 +1,7 @@
 package Tree;
 
 
-class BinaryNode <T> implements BinaryNodeInterface <T>{
+public class BinaryNode <T> implements BinaryNodeInterface <T>{
 
     private T data;
     private BinaryNode <T> leftChild;
