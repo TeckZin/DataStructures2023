@@ -2,8 +2,11 @@ package Tree;
 
 
 
+import Dictionary.BusinessName;
 import Stack.LinkedStack;
+import utils.Entry;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.EmptyStackException;
 import java.util.Iterator;
 
@@ -33,22 +36,24 @@ public class BinarySearchTree<T extends Comparable < ? super T >> extends Binary
         System.out.println(newEntry.getClass());
         assert (rootNode != null);
         T result = null;
-        int compValue = newEntry.compareTo (rootNode.getData());
+        int compValue = newEntry.compareTo(rootNode.getData());
+        System.out.println("In AddEntry");
+        System.out.println(newEntry.hashCode());
+        System.out.println(rootNode.getData().hashCode());
         if (compValue == 0) {
+
             result = rootNode.getData();
             rootNode.setData(newEntry);
-        }
-        else if (compValue < 0){
+        } else if (compValue < 0){
             if (rootNode.hasLeftChild())
                 result = addEntry (rootNode.getLeftChild(), newEntry);
             else
                 rootNode.setLeftChild(new BinaryNode <T>(newEntry));
         }
         else {
-            if (rootNode.hasRightChild())
-                result = addEntry (rootNode.getRightChild(), newEntry);
-            else
-                rootNode.setRightChild(new BinaryNode <T>(newEntry));
+
+            if (rootNode.hasRightChild()) result = addEntry (rootNode.getRightChild(), newEntry);
+            else rootNode.setRightChild(new BinaryNode <T>(newEntry));
         } // end if
         return result;
     }
@@ -56,8 +61,18 @@ public class BinarySearchTree<T extends Comparable < ? super T >> extends Binary
     @Override
     public T add(T newEntry) {
         T result = null;
-        if (isEmpty()) setTree(new BinaryNode<T>(newEntry));
-        else result = addEntry (getRootNode(), newEntry);
+
+        System.out.println("Test");
+        if (isEmpty()) {
+            System.out.println("new");
+            setTree(new BinaryNode<T>(newEntry));
+        } else{
+            System.out.println(getRootNode().getData().hashCode());
+            System.out.println(newEntry.hashCode());
+            result = addEntry (getRootNode(), newEntry);
+        }
+
+
         return result;
     }
     private T findEntry (BinaryNode <T> rootNode, T entry ){
@@ -164,6 +179,39 @@ public class BinarySearchTree<T extends Comparable < ? super T >> extends Binary
         }
         return result;
     }
+    public T addIterative (T newEntry) {
+        if (isEmpty()) {
+            setTree(new BinaryNode<>(newEntry));
+            return null;
+        }
+
+
+        BinaryNode<T> currNode = getRootNode();
+        T oldValue = null;
+        while (true) {
+            oldValue = currNode.getData();
+            int compValue = newEntry.compareTo(oldValue);
+            if (compValue == 0) {
+                currNode.setData(newEntry);
+                return oldValue;
+            }
+            if (compValue < 0) {
+                if (currNode.hasLeftChild())
+                    currNode = currNode.getLeftChild();
+                else {
+                    currNode.setLeftChild(new BinaryNode<>(newEntry));
+                    return null;
+                }
+            } else {
+                if (currNode.hasRightChild())
+                    currNode = currNode.getRightChild();
+                else {
+                    currNode.setRightChild(new BinaryNode<>(newEntry));
+                    return null;
+                }
+            }
+        }
+    }
     private void resetChild (MoveInfo move, BinaryNode <T>
             newChild){
         BinaryNode <T> parent = move.getParent();
@@ -180,11 +228,5 @@ public class BinarySearchTree<T extends Comparable < ? super T >> extends Binary
     public Iterator<T> getIterator() {
         return getInorderIterator();
     }
-
-
-
-
-
-
 
 }

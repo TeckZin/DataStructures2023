@@ -19,7 +19,11 @@ public class TreeDictionary <K extends Comparable <? super K>, V> implements Dic
         System.out.println("here");
 
         Entry<K, V> entry1 = new Entry<>(key, value);
+//        System.out.println(entry1.getValue());
+//        System.out.println(entry1.hashCode());
         tree.add(entry1);
+
+
 
         return value;
     }

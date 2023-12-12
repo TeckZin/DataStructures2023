@@ -50,6 +50,7 @@ public class TDProject {
         		phoneBook.add(fullName, phoneNumber);
 				reversePhoneBook.add(fullName, phoneNumber);
 				treeDictionaryPhoneBook.add(fullName, phoneNumber);
+				System.out.println(treeDictionaryPhoneBook.getSize());
 
 //				System.out.println(fullName);
 

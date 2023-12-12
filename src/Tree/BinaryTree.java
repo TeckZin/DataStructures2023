@@ -54,6 +54,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T> {
         initializeTree(rootData, (BinaryTree<T>) leftTree, (BinaryTree<T>) rightTree);
     }
 
+
     @Override
     public T getRootData() {
         return root.getData();
@@ -168,10 +169,10 @@ public class BinaryTree<T> implements BinaryTreeInterface<T> {
         return new PostOrderIterator();
     }
     private class InOrderIterator implements Iterator <T> {
-        private LinkedStack <BinaryNode <T>> nodeStack;
+        private ArrayStack <BinaryNode <T>> nodeStack;
         public InOrderIterator (){
             BinaryNode <T> currNode = root;
-            nodeStack = new LinkedStack <>();
+            nodeStack = new ArrayStack <>();
             while (currNode != null) {
                 nodeStack.push(currNode);
                 currNode = currNode.getLeftChild();

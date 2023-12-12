@@ -4,7 +4,7 @@ import utils.Node;
 import java.util.EmptyStackException;
 
 // https://wentworth.brightspace.com/d2l/le/content/40338/viewContent/474930/View
-abstract class BaseLink <T>{
+public abstract class BaseLink <T>{
 
     private Node <T> head;
     private int numberOfEntries;

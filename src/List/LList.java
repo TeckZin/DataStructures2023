@@ -2,6 +2,7 @@ package List;
 import utils.Node;
 
 import java.util.EmptyStackException;
+import java.util.Iterator;
 
 // https://wentworth.brightspace.com/d2l/le/content/40338/viewContent/474931/View
 public class LList <T> extends BaseLink<T> implements ListInterface<T>{
@@ -65,6 +66,10 @@ public class LList <T> extends BaseLink<T> implements ListInterface<T>{
         }
         return false;
     }
+
+
+
+
 
     /**
      * clea the list by removing all entries

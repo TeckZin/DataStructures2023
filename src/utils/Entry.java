@@ -20,7 +20,10 @@ public class Entry <K, V> implements Comparable<Entry<K, V>> {
 
     @Override
     public int compareTo(Entry<K, V> o) {
-        if(key.toString() == null) return 0;
+
+        if(key.toString() == null && o.toString() == null) return 0;
+        else if(key.toString() == null) return 1;
+        else if(o.toString() == null) return -1;
         int lastCmp = key.toString().compareTo(o.getKey().toString());
         return (lastCmp != 0 ? lastCmp : key.toString().compareTo(o.key.toString()));
     }
