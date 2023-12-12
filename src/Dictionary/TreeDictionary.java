@@ -30,12 +30,18 @@ public class TreeDictionary <K extends Comparable <? super K>, V> implements Dic
 
     @Override
     public V remove(K key) {
-        V value = getValue(key);
-        if (value != null){
-            tree.remove(new Entry<>(key, value));
 
+        Iterator<Entry<K, V>> entryIterator = tree.getIterator();
+        while(entryIterator.hasNext()){
+            Entry<K, V> entry = entryIterator.next();
+            if(entry.getKey().equals(key)){
+                tree.remove(entry);
+                return entry.getValue();
+            }
         }
-        return value;
+        return null;
+
+
     }
 
 

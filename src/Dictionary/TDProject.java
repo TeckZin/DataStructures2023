@@ -19,12 +19,18 @@ public class TDProject {
 	private TreeDictionary<BusinessName, String> treeDictionaryPhoneBook;
 
 
+	private LinkedDictionary<BusinessName, String> linkedDictionary;
+
+
+
+
 
 
 	public TDProject() {
 		phoneBook = new SortedArrayDictionary <>();
 		reversePhoneBook = new SortedArrayReverseDictionary<>();
 		treeDictionaryPhoneBook = new TreeDictionary<>();
+		linkedDictionary = new LinkedDictionary<>();
 	}
 
 	public boolean readFile(String fileName){
@@ -50,6 +56,7 @@ public class TDProject {
         		phoneBook.add(fullName, phoneNumber);
 				reversePhoneBook.add(fullName, phoneNumber);
 				treeDictionaryPhoneBook.add(fullName, phoneNumber);
+				linkedDictionary.add(fullName, phoneNumber);
 				System.out.println(treeDictionaryPhoneBook.getSize());
 
 //				System.out.println(fullName);
@@ -67,6 +74,27 @@ public class TDProject {
         return true;
         
 	}
+
+
+	public boolean addLinkedPhoneNumber(String fullName, String phone){
+		try{
+			linkedDictionary.add(new BusinessName(fullName), phone);
+			return true;
+		} catch (Exception e){
+			e.printStackTrace();
+			return false;
+		}
+	}
+	public boolean removeLinkedPhoneNumber(String fullName){
+		try{
+			linkedDictionary.remove(new BusinessName(fullName));
+			return true;
+		} catch (Exception e){
+			e.printStackTrace();
+			return false;
+		}
+	}
+
 
 	public boolean addPhoneTreeNumber(String fullName, String phone){
 		try{
@@ -134,15 +162,29 @@ public class TDProject {
 	}
 
 	public boolean addPhoneNumber(String fullName, String phone){
-		return addPhoneNormalNumber(fullName, phone) && addPhoneReverseNumber(fullName, phone) && addPhoneTreeNumber(fullName, phone);
+		return addLinkedPhoneNumber(fullName, phone) && addPhoneNormalNumber(fullName, phone) && addPhoneReverseNumber(fullName, phone) && addPhoneTreeNumber(fullName, phone);
 	}
 
 	public boolean removePhoneNumber(String fullName){
 
-		return removePhoneNormalNumber(fullName) && removePhoneReverseNumber(fullName) && removePhoneTreeNumber(fullName);
+		return removeLinkedPhoneNumber(fullName) &&  removePhoneNormalNumber(fullName) && removePhoneReverseNumber(fullName) && removePhoneTreeNumber(fullName);
 
 	}
 
+	public void printLinked(){
+		System.out.println("Linked");
+
+		Iterator<BusinessName> nameIterator = linkedDictionary.getKeyIterator();
+
+		Iterator <String> phoneIterator = linkedDictionary.getValueIterator();
+
+		while (nameIterator.hasNext()) {
+
+			BusinessName businessName = nameIterator.next();
+			System.out.println(businessName.getName() + ": " +
+					phoneIterator.next() + ": Location: " + businessName.getMunicipality());
+		}
+	}
 	public void printTree(){
 		System.out.println("Tree");
 

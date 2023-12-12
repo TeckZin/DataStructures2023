@@ -11,6 +11,7 @@ public class Main<K, V> {
         System.out.println("reverse");
         tdProject.printReverse();
         tdProject.printTree();
+        tdProject.printLinked();
 //        tdProject.printInorder();
 
 

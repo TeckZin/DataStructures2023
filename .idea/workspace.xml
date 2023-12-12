@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff43433a-4725-43c4-ac4b-07fb36dfc71a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Dictionary/DictionaryLinkList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dictionary/EntryLinkNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dictionary/LinkedDictionary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary/LinkedDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary/LinkedDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dictionary/TDProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary/TDProject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dictionary/TreeDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary/TreeDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/List/BaseLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/List/BaseLink.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/List/LList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/List/LList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Entry.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +166,7 @@
       <workItem from="1702087510601" duration="5753000" />
       <workItem from="1702165643798" duration="8000000" />
       <workItem from="1702178074534" duration="1191000" />
-      <workItem from="1702239288154" duration="20285000" />
+      <workItem from="1702239288154" duration="23162000" />
     </task>
     <task id="LOCAL-00001" summary="push all">
       <created>1697045652131</created>
@@ -215,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702324253671</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="push all">
+      <created>1702352379208</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702352379208</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

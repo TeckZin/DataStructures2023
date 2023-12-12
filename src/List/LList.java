@@ -3,6 +3,8 @@ import utils.Node;
 
 import java.util.EmptyStackException;
 import java.util.Iterator;
+import java.util.List;
+import java.util.NoSuchElementException;
 
 // https://wentworth.brightspace.com/d2l/le/content/40338/viewContent/474931/View
 public class LList <T> extends BaseLink<T> implements ListInterface<T>{
@@ -66,9 +68,34 @@ public class LList <T> extends BaseLink<T> implements ListInterface<T>{
         }
         return false;
     }
+    private class ListIterator implements Iterator<T> {
+
+        int cursor;
+
+        public ListIterator(){
+            cursor = 0;
+        }
 
 
+        @Override
+        public boolean hasNext() {
+            return cursor < getLength();
+        }
 
+        @Override
+        public T next() {
+            if (!hasNext()){
+                throw new NoSuchElementException();
+            }
+            T entry = getEntry(cursor);
+            cursor++;
+            return entry;
+        }
+    }
+
+    public Iterator<T> getIterator(){
+        return new ListIterator();
+    }
 
 
     /**
